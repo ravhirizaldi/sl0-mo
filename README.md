@@ -79,4 +79,4 @@ Express middleware.
 
 ## License
 
-ISC
+MIT
