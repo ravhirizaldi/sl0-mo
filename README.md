@@ -1,6 +1,7 @@
 # sl0-mo
 
 [![npm version](https://img.shields.io/npm/v/sl0-mo.svg)](https://www.npmjs.com/package/sl0-mo)
+[![codecov](https://codecov.io/gh/ravhirizaldi/sl0-mo/branch/main/graph/badge.svg)](https://codecov.io/gh/ravhirizaldi/sl0-mo)
 
 A lightweight Node.js library to add artificial latency and random errors to async functions and Express routes. Ideal for testing how your application handles slow networks or flaky services.
 
