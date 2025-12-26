@@ -61,6 +61,23 @@ app.get('/', (req, res) => {
 app.listen(3000);
 ```
 
+### Wrapping Express Route Handlers
+
+You can also wrap individual Express route handlers using `withLatency`. It automatically detects Express request objects and handles errors by calling `next(err)`.
+
+```typescript
+import { withLatency } from 'sl0-mo';
+
+app.get('/risky-route', withLatency(async (req, res, next) => {
+  // logic here
+  res.send('Success (maybe)');
+}, {
+  min: 100,
+  max: 500,
+  errorRate: 0.5
+}));
+```
+
 ## API
 
 ### `withLatency(fn, options)`
