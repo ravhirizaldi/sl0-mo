@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A lightweight library to add artificial latency to async functions.",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravhirizaldi/sl0-mo.git"
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean",
